@@ -1,0 +1,9 @@
+services:
+
+    new-docker:
+        container_name: test_docker
+        build: .
+        volumes:
+          - .:/var/www/html
+        ports:
+        - 2525:80
